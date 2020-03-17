@@ -1554,6 +1554,12 @@
  * probe points will follow. This prevents any change from causing
  * the probe to be unable to reach any points.
  */
+
+#define MIN_PROBE_EDGE_LEFT 0
+#define MIN_PROBE_EDGE_RIGHT 10
+#define MIN_PROBE_EDGE_FRONT 20
+#define MIN_PROBE_EDGE_BACK 0
+
 #if PROBE_SELECTED && !IS_KINEMATIC
   //#define MIN_PROBE_EDGE_LEFT MIN_PROBE_EDGE
   //#define MIN_PROBE_EDGE_RIGHT MIN_PROBE_EDGE
@@ -1929,7 +1935,7 @@
 #if HAS_DRIVER(TMC26X)
 
   #if AXIS_DRIVER_TYPE_X(TMC26X)
-    #define X_MAX_CURRENT     1000  // (mA)
+    #define X_MAX_CURRENT      700  // (mA)
     #define X_SENSE_RESISTOR    91  // (mOhms)
     #define X_MICROSTEPS        16  // Number of microsteps
   #endif
@@ -1977,7 +1983,7 @@
   #endif
 
   #if AXIS_DRIVER_TYPE_E0(TMC26X)
-    #define E0_MAX_CURRENT    1000
+    #define E0_MAX_CURRENT     700
     #define E0_SENSE_RESISTOR   91
     #define E0_MICROSTEPS       16
   #endif
