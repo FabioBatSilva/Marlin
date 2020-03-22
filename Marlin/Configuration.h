@@ -973,7 +973,7 @@
  * Specify a Probe position as { X, Y, Z }
  */
 
-#define NOZZLE_TO_PROBE_OFFSET { 6, -46, -1.8 }
+#define NOZZLE_TO_PROBE_OFFSET { 6, -46, -1.6 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1337,7 +1337,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
