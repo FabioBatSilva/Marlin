@@ -9,6 +9,7 @@ M114 ; Get Current Position
 
 M122 ; Report TMC driver
 
+M111 S38 ; DEBUG LEVELING, ERRORS, INFO
 
 M112 ; Emergency stop
 
